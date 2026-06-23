@@ -61,19 +61,20 @@ export default function Services() {
 
   return (
     <div className="bg-[#032031] text-white min-h-screen">
-      {/* Banner Section */}
-      <section className="bg-[#021825] py-20 px-4 sm:px-6 lg:px-8 text-center border-b border-white/10 relative overflow-hidden">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-amber-500/5 rounded-full blur-3xl pointer-events-none" />
-        <div className="max-w-4xl mx-auto relative z-10">
-          <span className="text-xs font-bold uppercase tracking-widest text-amber-500 block mb-3">Our Core Offerings</span>
-          <h1 className="text-4xl sm:text-5xl font-black tracking-tight mb-4">
-            Professional Security Services
-          </h1>
-          <p className="text-base sm:text-lg text-zinc-300 max-w-2xl mx-auto">
-            Providing comprehensive security guard programs strictly compliant with British Standards to protect your assets, people, and operations.
-          </p>
+      {/* Full Screen Width Relative Container: 30% of Available Screen Height (#032031 Background) */}
+      <div className="relative w-full h-[30vh] min-h-[220px] bg-[#032031] overflow-hidden shadow-2xl border-b border-white/10 flex items-center justify-center">
+        
+        {/* Subtle Grid Pattern Overlay to Enhance Texture */}
+        <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:30px_30px] [mask-image:radial-gradient(ellipse_at_center,black,transparent)] pointer-events-none" />
+
+        {/* Prominent Overlay Text Banner: Positioned on Top of Everything (z-30) */}
+        <div className="z-30 text-center px-4 pointer-events-none select-none filter drop-shadow-[0_10px_30px_rgba(0,0,0,0.5)]">
+          <span className="text-[7.5vw] sm:text-6xl md:text-7xl lg:text-8xl font-black uppercase tracking-[0.15em] sm:tracking-[0.25em] text-white block sm:inline leading-tight">
+            Our Services
+          </span>
         </div>
-      </section>
+
+      </div>
 
       {/* Services List Section */}
       <section className="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">

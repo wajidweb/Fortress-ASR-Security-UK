@@ -125,13 +125,19 @@ export default function Footer() {
         </div>
 
         {/* Closing details and legal */}
-        <div className="mt-16 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left">
-          <p className="text-xs text-white">
-            All operations strictly follow codes of practice (BS 7499, BS 7960, BS 7984, BS 10800), guaranteeing premium operational standards.
+        <div className="mt-16 pt-8 border-t border-white/10 flex flex-col sm:flex-row justify-between items-center gap-4 text-center sm:text-left text-sm text-white">
+          <p>&copy; {currentYear} Fortress Asr Security. All rights reserved.</p>
+          <p className="text-white/70 sm:text-right">
+            Developed by{" "}
+            <Link
+              href="https://wajidalikhan-portfolio.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-white underline transition"
+            >
+              Wajid Ali Khan
+            </Link>
           </p>
-          <div className="text-xs text-white md:text-right">
-            &copy; {currentYear} Fortress Asr Security. All rights reserved.
-          </div>
         </div>
 
       </div>
