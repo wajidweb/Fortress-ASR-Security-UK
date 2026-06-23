@@ -69,7 +69,7 @@ export default function Services() {
 
         {/* Prominent Overlay Text Banner: Positioned on Top of Everything (z-30) */}
         <div className="z-30 text-center px-4 pointer-events-none select-none filter drop-shadow-[0_10px_30px_rgba(0,0,0,0.5)]">
-          <span className="text-[7.5vw] sm:text-6xl md:text-7xl lg:text-8xl font-black uppercase tracking-[0.15em] sm:tracking-[0.25em] text-white block sm:inline leading-tight">
+          <span className="text-[6vw] sm:text-5xl md:text-6xl lg:text-7xl font-black uppercase tracking-[0.15em] sm:tracking-[0.25em] text-white block sm:inline leading-tight">
             Our Services
           </span>
         </div>
