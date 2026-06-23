@@ -115,7 +115,7 @@ export default function Header() {
       {/* Mobile Menu Panel */}
       {isOpen && (
         <div 
-          className="md:hidden absolute top-20 left-0 w-full bg-[#032031] border-b border-white/10 shadow-2xl animate-fade-in" 
+          className="md:hidden absolute top-20 left-0 w-full bg-[#032031] border-b border-white/10 shadow-2xl animate-fade-in z-50" 
           id="mobile-menu"
         >
           <div className="space-y-1 px-4 pb-6 pt-3">
