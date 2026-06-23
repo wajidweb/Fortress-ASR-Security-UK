@@ -1,6 +1,15 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
+
+const coreServices = [
+  "Manned Guarding & Door Supervision (BS 7499 / BS 7960)",
+  "Construction Site Security (BS 7499)",
+  "Mobile Patrols (BS 7984-3)",
+  "Key Holding & Alarm Response (BS 7984-1)",
+  "Reception & Concierge Security (BS 10800)",
+  "Other / General Inquiry"
+];
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -14,6 +23,41 @@ export default function Contact() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [error, setError] = useState("");
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const params = new URLSearchParams(window.location.search);
+      const serviceParam = params.get("service");
+      if (serviceParam) {
+        let matchedService = "";
+        switch (serviceParam.toLowerCase()) {
+          case "manned":
+            matchedService = "Manned Guarding & Door Supervision (BS 7499 / BS 7960)";
+            break;
+          case "construction":
+            matchedService = "Construction Site Security (BS 7499)";
+            break;
+          case "mobile":
+            matchedService = "Mobile Patrols (BS 7984-3)";
+            break;
+          case "keyholding":
+            matchedService = "Key Holding & Alarm Response (BS 7984-1)";
+            break;
+          case "reception":
+            matchedService = "Reception & Concierge Security (BS 10800)";
+            break;
+          default:
+            matchedService = coreServices.find(service => 
+              service.toLowerCase().includes(serviceParam.toLowerCase())
+            ) || "";
+            break;
+        }
+        if (matchedService) {
+          setFormData((prev) => ({ ...prev, serviceRequest: matchedService }));
+        }
+      }
+    }
+  }, []);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
@@ -63,15 +107,6 @@ export default function Contact() {
       setIsSubmitting(false);
     }
   };
-
-  const coreServices = [
-    "Manned Guarding & Door Supervision (BS 7499 / BS 7960)",
-    "Construction Site Security (BS 7499)",
-    "Mobile Patrols (BS 7984-3)",
-    "Key Holding & Alarm Response (BS 7984-1)",
-    "Reception & Concierge Security (BS 10800)",
-    "Other / General Inquiry"
-  ];
 
   return (
     <div className="bg-white text-black min-h-screen font-sans antialiased">
