@@ -1,13 +1,13 @@
-# Fortress ASR Security: Comprehensive Website Plan & Architectural Blueprint
+# Fortress Asr Security: Comprehensive Website Plan & Architectural Blueprint
 
-This document outlines the complete architectural, functional, design, and content specification for the **Fortress ASR Security** website, built in accordance with the specifications in `Website Hierarchy-content.pdf`. It is structured to act as an exhaustive development blueprint, ensuring strict adherence to elite professional standards and British security regulations.
+This document outlines the complete architectural, functional, design, and content specification for the **Fortress Asr Security** website, built in accordance with the specifications in `Website Hierarchy-content.pdf`. It is structured to act as an exhaustive development blueprint, ensuring strict adherence to elite professional standards and British security regulations.
 
 ---
 
 ## 1. Executive Summary & Brand Strategy
 
 ### 1.1 Brand Positioning
-**Fortress ASR Security** is positioned as an elite, high-integrity, UK-compliant private security agency. Unlike low-cost guarding services, Fortress ASR specializes in premier security protection driven by:
+**Fortress Asr Security** is positioned as an elite, high-integrity, UK-compliant private security agency. Unlike low-cost guarding services, Fortress ASR specializes in premier security protection driven by:
 *   Rigorous officer vetting (BS 7858)
 *   Strict compliance with sector-specific British Standards (BS 10800, BS 7499, BS 7960, BS 7984)
 *   Professional conflict de-escalation and absolute legal liability control
@@ -58,7 +58,7 @@ The website is structured into **five core sections** accessible via a persisten
 ## 3. Persistent Layout Elements
 
 ### 3.1 Persistent Header (Navigation Bar)
-*   **Left Side:** Fortress ASR Security Shield Logo. The logo consists of a premium golden shield containing a stylized double-tower fortress and the brand name. It is enclosed in a link targeting the home page (`/`).
+*   **Left Side:** Fortress Asr Security Shield Logo. The logo consists of a premium golden shield containing a stylized double-tower fortress and the brand name. It is enclosed in a link targeting the home page (`/`).
 *   **Center/Right Side:** Responsive Desktop/Mobile Navigation Menu containing links to:
     *   `Our Services` (`/services`)
     *   `Why Choose Us` (`/why-us`)
@@ -115,7 +115,7 @@ The homepage acts as a high-conversion, highly visual entrance. It focuses on ab
 
 ### 4.2 About Us Page (`/about`)
 
-The About Us page establishes the human and corporate foundation of Fortress ASR Security, highlighting compliance, vetting, and professional background.
+The About Us page establishes the human and corporate foundation of Fortress Asr Security, highlighting compliance, vetting, and professional background.
 
 #### Section 4.2.1: Mission Statement
 *   **Visual Accent:** Large stylized blockquote with a golden left border, displayed on a high-contrast dark block.
@@ -141,7 +141,7 @@ The About Us page establishes the human and corporate foundation of Fortress ASR
 
 ### 4.3 Our Services Page (`/services`)
 
-This page details the five pillars of the Fortress ASR Security operational model. Each service displays its associated British Standard code of practice to emphasize administrative excellence and legal protection.
+This page details the five pillars of the Fortress Asr Security operational model. Each service displays its associated British Standard code of practice to emphasize administrative excellence and legal protection.
 
 #### Section 4.3.1: Manned Guarding & Door Supervision
 *   **Associated Codes:** **BS 7499** (Static Site Guarding), **BS 7960** (Door Supervision), and **BS 10800** (Provision of Security Services).
@@ -243,7 +243,7 @@ A fully styled, state-monitored, responsive form with clear validation and input
 *   **Hover/Focus States:** Form fields outline with the branding color (Premium Royal Blue / Gold) when active.
 *   **Sending State:** Displays a loading spinner with text `Sending Inquiry...`. The `Send` button is disabled to prevent multiple submissions.
 *   **Success State:** Replaces the form with a high-contrast, gold-bordered success card:
-    > "✓ Inquiry Submitted Successfully! Thank you for contacting Fortress ASR Security. One of our SIA-approved deployment specialists will reach out to you within the next 2 hours."
+    > "✓ Inquiry Submitted Successfully! Thank you for contacting Fortress Asr Security. One of our SIA-approved deployment specialists will reach out to you within the next 2 hours."
 *   **Error State:** Displays a red alert box:
     > "✗ Submission Failed. Please verify your fields and try again, or call our 24/7 dispatch office directly."
 

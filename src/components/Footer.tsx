@@ -11,11 +11,11 @@ export default function Footer() {
           {/* Company Identity */}
           <div className="space-y-6">
             <Link href="/" className="flex items-center space-x-3 group">
-              <div className="relative h-20 w-[56px] overflow-hidden transition-all duration-300">
+              <div className="relative transition-all duration-300">
                 <img
                   src="/logo1.png"
-                  alt="Fortress ASR Security Logo"
-                  className="h-full w-full object-contain"
+                  alt="Fortress Asr Security Logo"
+                  className="h-20 w-auto rounded-lg border border-white/10 p-0.5"
                 />
               </div>
               <div className="flex flex-col">

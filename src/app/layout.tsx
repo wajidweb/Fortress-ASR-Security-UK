@@ -15,8 +15,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "FortressAsrSecurity | Professional Security Guard Services",
-  description: "Providing reliable, 24/7 commercial, residential, corporate, and event security guard services. Contact FortressAsrSecurity today for a free consultation.",
+  title: "Fortress Asr Security | Professional Security Guard Services",
+  description: "Providing reliable, 24/7 commercial, residential, corporate, and event security guard services. Contact Fortress Asr Security today for a free consultation.",
 };
 
 export default function RootLayout({

@@ -37,11 +37,11 @@ export default function Header() {
           onClick={handleHomeClick}
           className="flex items-center space-x-3 group relative z-10"
         >
-          <div className="relative h-16 w-[45px] overflow-hidden group-hover:scale-105 transition-all duration-300">
+          <div className="relative group-hover:scale-105 transition-all duration-300">
             <img
               src="/logo1.png"
-              alt="Fortress ASR Security Logo"
-              className="h-full w-full object-contain"
+              alt="Fortress Asr Security Logo"
+              className="h-16 w-auto rounded-lg border border-white/10 p-0.5"
             />
           </div>
           <div className="flex flex-col">
